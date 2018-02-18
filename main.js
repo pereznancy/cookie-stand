@@ -1,4 +1,4 @@
-var hoursOpen = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm"]; //hours for all stores
+var hoursOpen = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm"] //hours for all stores
 
 
 //function will get cookies ordered based on random customer # & avg cookies bought
@@ -57,8 +57,12 @@ var storeContainer = document.getElementById("store-container");
 for (var storeIndex = 0; storeIndex < stores.length; storeIndex++) {
   var store = stores[storeIndex];
   var storeList = "<tr><h3>" + store.name + "</h3>";
+  var totalCookies = 0;
   for (var hourIndex = 0; hourIndex < hoursOpen.length; hourIndex++) {
-    storeList += "<li>" + hoursOpen[hourIndex] + ": " + store.newAvgCookies() + "</li>";
+    var avgCookies = store.newAvgCookies();
+    storeList += "<li>" + hoursOpen[hourIndex] + ": " + avgCookies + "</li>";
+    totalCookies += avgCookies;
   }
+  storeList += "<li>Total: "  + totalCookies + "</li>";
   storeContainer.innerHTML += storeList; + "</ul>";
 }
