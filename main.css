@@ -1,0 +1,31 @@
+body {
+  background-color: #fa80724d;
+  opacity: 50%;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #A87171;
+}
+
+h6 {
+  text-align: center;
+  margin-top: 0;
+  color: #845b5b;
+}
+
+#store-container {
+  background-color: #fa807238;
+  text-align: center;
+  width: 60%;
+  padding: 2px;
+  margin: auto;
+  border: 20px solid white;
+  border-radius: 20px;
+}
+
+#salmon {
+  width: 20%;
+  text-align: center;
+}
