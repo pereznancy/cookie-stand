@@ -39,6 +39,16 @@ var washington = {
   }
 };
 
+var sellwood = {
+  name: "Sellwood",
+  minCustomer: 20,
+  maxCustomer: 48,
+  avgCookies: 3.3,
+  newAvgCookies: function() {
+    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
+  }
+};
+
 var pearl = {
   name: "Pearl District",
   minCustomer: 3,
@@ -50,7 +60,7 @@ var pearl = {
 };
 
 //holds objects
-var stores = [pioneer, airport, washington,pearl];
+var stores = [pioneer, airport, washington, sellwood, pearl];
 
 //function will creat unordered lists
 var storeContainer = document.getElementById("store-container");
