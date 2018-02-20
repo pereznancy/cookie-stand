@@ -1,6 +1,6 @@
 # cookie-stand
-My friend Pat has come up with a business idea: coffee-time confection called Salmon Cookies. Since we're in Portland, he's also made them vegan so EVERYONE can enjoy them! 
-For this, Pat has asked for a web application to calculate the number of cookies needed for each of his future locations based on anticipated customers. This is to ensure baking schedules meet supply needs. 
+My friend Pat has come up with a business idea: coffee-time confection called Salmon Cookies. Since we're in Portland, he's also made them vegan so EVERYONE can enjoy them!
+For this, Pat has asked for a web application to calculate the number of cookies needed for each of his future locations based on anticipated customers. This is to ensure baking schedules meet supply needs.
 
 # Calculate Daily Sales Prokection
 * Store the min/max hourly customers, and the average cookies per customer; use object properties.

@@ -2,3 +2,19 @@ h1, h3 {
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: #A87171;
 }
+
+h6 {
+  margin-top: 0;
+  color: #845b5b;
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #A87171;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+  background-color: #fa80724d;
+  opacity: 50%;
+}

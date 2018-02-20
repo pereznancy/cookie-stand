@@ -63,6 +63,6 @@ for (var storeIndex = 0; storeIndex < stores.length; storeIndex++) {
     storeList += "<li>" + hoursOpen[hourIndex] + ": " + avgCookies + "</li>";
     totalCookies += avgCookies;
   }
-  storeList += "<li>Total: "  + totalCookies + "</li>";
+  storeList += "<li>Total: "  + totalCookies + "</li>";  //adds total to the end of hours
   storeContainer.innerHTML += storeList; + "</ul>";
 }
