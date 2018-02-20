@@ -1,6 +1,11 @@
 body {
+  background-image: url("salmon.png");
   background-color: #fa80724d;
-  opacity: 50%;
+  /* opacity: 50%; */
+}
+
+header {
+  text-align: center;
 }
 
 h1, h2 {
@@ -16,18 +21,45 @@ h6 {
   color: #845b5b;
 }
 
-#store-container {
+section, nav, aside {
   font-family: "Comic Sans MS", cursive, sans-serif;
   background-color: #fa807238;
   text-align: center;
-  width: 60%;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section {
+  width: 50%;
   padding: 2px;
-  margin: auto;
   border: 20px solid white;
   border-radius: 20px;
+  
 }
 
 #salmon {
   width: 20%;
+  text-align: center;
+
+}
+
+#family {
+  width: 50%;
+}
+
+#shirt {
+  width: 95%;
+}
+
+nav, aside {
+  width: 200px;
+  width: 15%;
+  border: 2px solid white;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+footer {
   text-align: center;
 }

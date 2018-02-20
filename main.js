@@ -62,7 +62,7 @@ var pearl = {
 //holds objects
 var stores = [pioneer, airport, washington, sellwood, pearl];
 
-//function will creat unordered lists
+//function will create unordered lists
 var storeContainer = document.getElementById("store-container");
 for (var storeIndex = 0; storeIndex < stores.length; storeIndex++) {
   var store = stores[storeIndex];
