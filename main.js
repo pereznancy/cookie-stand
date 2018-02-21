@@ -6,7 +6,6 @@ var getCookiesOrdered = function getRandomIntInclusive(minCustomers, maxCustomer
   return Math.floor(((Math.random() * (maxCustomers - minCustomers + 1)) + minCustomers) * averageCookies); //"The maximum is inclusive and the minimum is inclusive" -MDN
 }
 
-
 //object properties
 var pioneer = {
   name: "Pioneer Square",
@@ -58,6 +57,24 @@ var pearl = {
     return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
   }
 };
+
+//Store Constructor
+var Stores = function(name, minCustomer, maxCustomer, avgCookies) {
+  this.name = name;
+  this.minCustomer = minCustomer;
+  this.maxCustomer = maxCustomer;
+  this.avgCookies = avgCookies;
+}
+
+//store array
++var store = [];
+store.push({name:"Pioneer Square", minCustomer:17, maxCustomer: 88, avgCookies: 5.2});
+store.push({name:"Portland Airport", minCustomer:6, maxCustomer: 24, avgCookies: 1.2});
+store.push({name:"Washington Square", minCustomer:11, maxCustomer: 38, avgCookies: 1.9});
+store.push({name:"Sellwood", minCustomer:20, maxCustomer: 48, avgCookies: 3.3});
+store.push({name:"Pearl District", minCustomer:3, maxCustomer: 24, avgCookies: 2.6});
+
+
 
 //holds objects
 var stores = [pioneer, airport, washington, sellwood, pearl];
