@@ -14,7 +14,40 @@ h2 {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-body {
+/* body {
   background-color: #fa80724d;
   opacity: 50%;
+} */
+
+#background {
+  width: 20%;
+  background-color: #a871714a;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#border {
+  width: 20%;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#headers {
+  width: 20%;
+  background-color: #A87171;
+  text-align: center;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+#table {
+  width: 20%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  display: inline-block;
 }
