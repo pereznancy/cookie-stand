@@ -6,73 +6,25 @@ var getCookiesOrdered = function getRandomIntInclusive(minCustomers, maxCustomer
   return Math.floor(((Math.random() * (maxCustomers - minCustomers + 1)) + minCustomers) * averageCookies); //"The maximum is inclusive and the minimum is inclusive" -MDN
 }
 
-//object properties
-var pioneer = {
-  name: "Pioneer Square",
-  minCustomer: 17,
-  maxCustomer: 88,
-  avgCookies: 5.2,
-  newAvgCookies: function() {
-    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
-  }
-};
-
-
-var airport = {
-  name: "Portland Airport",
-  minCustomer: 6,
-  maxCustomer: 88,
-  avgCookies: 5.2,
-  newAvgCookies: function() {
-    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
-  }
-};
-
-var washington = {
-  name: "Washington Square",
-  minCustomer: 11,
-  maxCustomer: 38,
-  avgCookies: 1.9,
-  newAvgCookies: function() {
-    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
-  }
-};
-
-var sellwood = {
-  name: "Sellwood",
-  minCustomer: 20,
-  maxCustomer: 48,
-  avgCookies: 3.3,
-  newAvgCookies: function() {
-    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
-  }
-};
-
-var pearl = {
-  name: "Pearl District",
-  minCustomer: 3,
-  maxCustomer: 24,
-  avgCookies: 2.6,
-  newAvgCookies: function() {
-    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
-  }
-};
 
 //Store Constructor
-var Stores = function(name, minCustomer, maxCustomer, avgCookies) {
+var Store = function(name, minCustomer, maxCustomer, avgCookies) {
   this.name = name;
   this.minCustomer = minCustomer;
   this.maxCustomer = maxCustomer;
   this.avgCookies = avgCookies;
+  newAvgCookies: function() {
+    return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
+  }
 }
 
 //store array
-+var store = [];
-store.push({name:"Pioneer Square", minCustomer:17, maxCustomer: 88, avgCookies: 5.2});
-store.push({name:"Portland Airport", minCustomer:6, maxCustomer: 24, avgCookies: 1.2});
-store.push({name:"Washington Square", minCustomer:11, maxCustomer: 38, avgCookies: 1.9});
-store.push({name:"Sellwood", minCustomer:20, maxCustomer: 48, avgCookies: 3.3});
-store.push({name:"Pearl District", minCustomer:3, maxCustomer: 24, avgCookies: 2.6});
+var locations = [];
+store.push(new Store(name:"Pioneer Square", minCustomer:17, maxCustomer: 88, avgCookies: 5.2));
+store.push(new Store(name:"Portland Airport", minCustomer:6, maxCustomer: 24, avgCookies: 1.2));
+store.push(new Store(name:"Washington Square", minCustomer:11, maxCustomer: 38, avgCookies: 1.9));
+store.push(new Store(name:"Sellwood", minCustomer:20, maxCustomer: 48, avgCookies: 3.3));
+store.push(new Store(name:"Pearl District", minCustomer:3, maxCustomer: 24, avgCookies: 2.6));
 
 
 
