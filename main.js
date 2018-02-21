@@ -74,5 +74,5 @@ for (var storeIndex = 0; storeIndex < stores.length; storeIndex++) {
     totalCookies += avgCookies;
   }
   storeList += "<li>Total: "  + totalCookies + "</li>";  //adds total to the end of hours
-  storeContainer.innerHTML += storeList; + "</ul>";
+  storeContainer.innerHTML += storeList + "</ul>";
 }
