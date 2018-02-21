@@ -13,35 +13,49 @@ var Store = function(name, minCustomer, maxCustomer, avgCookies) {
   this.minCustomer = minCustomer;
   this.maxCustomer = maxCustomer;
   this.avgCookies = avgCookies;
-  newAvgCookies: function() {
+  newAvgCookies = function() {
     return getCookiesOrdered(this.minCustomer, this.maxCustomer, this.avgCookies);
   }
 }
 
 //store array
 var locations = [];
-store.push(new Store(name:"Pioneer Square", minCustomer:17, maxCustomer: 88, avgCookies: 5.2));
-store.push(new Store(name:"Portland Airport", minCustomer:6, maxCustomer: 24, avgCookies: 1.2));
-store.push(new Store(name:"Washington Square", minCustomer:11, maxCustomer: 38, avgCookies: 1.9));
-store.push(new Store(name:"Sellwood", minCustomer:20, maxCustomer: 48, avgCookies: 3.3));
-store.push(new Store(name:"Pearl District", minCustomer:3, maxCustomer: 24, avgCookies: 2.6));
+locations.push(new Store("Pioneer Square", 17, 88, 5.2));
+locations.push(new Store("Portland Airport", 6, 24, 1.2));
+locations.push(new Store("Washington Square", 11, 38, 1.9));
+locations.push(new Store("Sellwood",20, 48, 3.3));
+locations.push(new Store("Pearl District", 3, 24, 2.6));
 
-
-
-//holds objects
-var stores = [pioneer, airport, washington, sellwood, pearl];
-
-//function will create unordered lists
-var storeContainer = document.getElementById("store-container");
-for (var storeIndex = 0; storeIndex < stores.length; storeIndex++) {
-  var store = stores[storeIndex];
-  var storeList = "<h3>" + store.name + "</h3>";
-  var totalCookies = 0;
-  for (var hourIndex = 0; hourIndex < hoursOpen.length; hourIndex++) {
-    var avgCookies = store.newAvgCookies();
-    storeList += "<li>" + hoursOpen[hourIndex] + ": " + avgCookies + "</li>";
-    totalCookies += avgCookies;
+//make table
+function makeTable() {
+  var table = document.getElementById("store-container");
+  table.innerHTML = "<tr><th>Location</th><th>Min Customers</th><th>Max Customers</th><th>Avg Cookies</th>";
+  //for loop to add info to tables
+  for (var index = 0; index < locations.length; index++) {
+    row = document.createElement("tr");
+    cell = document.createElement("td");
+    cell.innerHTML = locations[index].name;
+    row.appendChild(cell);
+    cell = document.createElement("td");
+    cell.innerHTML = locations[index].minCustomer;
+    row.appendChild(cell);
+    cell = document.createElement("td");
+    cell.innerHTML = locations[index].maxCustomer;
+    row.appendChild(cell);
+    cell = document.createElement("td");
+    cell.innerHTML = locations[index].avgCookies;
+    row.appendChild(cell);
+    table.appendChild(row);
   }
-  storeList += "<li>Total: "  + totalCookies + "</li>";  //adds total to the end of hours
-  storeContainer.innerHTML += storeList + "</ul>";
+}
+
+makeTable();
+
+function addStore() {
+  var name = prompt("Location Name: ");
+  var minCustomer = prompt("Min Customers per Hour: ");
+  var maxCustomer = prompt("Max Customers per Hour: ");
+  var avgCookies = prompt("Average Cookies Bought Per Customer: ");
+  locations.push(new Store(name, minCustomer, maxCustomer, avgCookies));
+  makeTable();
 }
