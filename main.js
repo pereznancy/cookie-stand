@@ -49,8 +49,6 @@ function makeTable() {
   }
 }
 
-makeTable();
-
 function addStore() {
   var name = prompt("Location Name: ");
   var minCustomer = prompt("Min Customers per Hour: ");
@@ -59,3 +57,5 @@ function addStore() {
   locations.push(new Store(name, minCustomer, maxCustomer, avgCookies));
   makeTable();
 }
+
+makeTable();
