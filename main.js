@@ -34,7 +34,7 @@ function makeTable() {
       table.innerHTML +="<tr><td>" + hoursOpen[indexHour] + "</td><td>" + cookiesPerHour + "</td>"
       totalCookies += cookiesPerHour;
     }
-    table.innerHTML += "<tr><td>Total: " + totalCookies + "</tr></td>"
+    table.innerHTML += "<tr><td>Total: </td><td>" + totalCookies + "</tr></td>"
   }
 }
 
