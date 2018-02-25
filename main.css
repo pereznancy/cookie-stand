@@ -28,7 +28,7 @@ section, nav, aside {
 }
 
 section {
-  width: 50%;
+  width: 30%;
   padding: 2px;
   border: 7px solid white;
   border-radius: 20px;
@@ -50,18 +50,37 @@ section {
 }
 
 
-
 nav, aside {
-  width: 15%;
+  width: 30%;
   border: 2px solid white;
   border-radius: 20px;
   display: inline-block;
 }
 
-aside {
-  width: 20%;
-}
+
 footer {
   text-align: center;
   background-color: white;
+}
+
+th, td {
+  padding: 4px 8px;
+  border-bottom: 1px solid black;
+}
+
+table {
+  border: 1px solid black;
+  margin:auto;
+}
+
+tbody:nth-child(even) {
+  background-color: #e1a4a0;
+}
+
+tr:hover {
+  background-color: #EEFFEE;
+}
+
+th {
+  text-size: 15px;
 }
