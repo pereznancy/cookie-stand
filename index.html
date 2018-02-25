@@ -29,8 +29,17 @@
       </nav>
     <section>
       <h2>Cookies needed by location</h2>
+      <div id="table" style="overflow-x:auto;">
       <table id="store-container">
       </table>
+    </div>
+      <form id="form">
+        <label>Store Name: <input type="text" name="store" onblur="isValidEntry(this)"></label>
+        <label>Minimum Customer: <input type="text" name="minCustomer" onblur="isValidEntry(this)"></label>
+        <label>Maximum Customer: <input type="text" name="maxCustomer" onblur="isValidEntry(this)"></label>
+        <label>Average Cookies: <input type="text" name="avgCookies" onblur="isValidEntry(this)"></label>
+        <input type="button" onclick="addStore(this.form)" value="Add Store">
+      </form>
     </section>
     <aside>
       <h2>Why We Do This</h2>
