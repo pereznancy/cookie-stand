@@ -6,16 +6,23 @@ header {
   text-align: center;
 }
 
+
 h1, h2 {
   text-align: center;
   color: #A87171;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+h1 {
+  font-size: 51px;
+}
+
+
 h6 {
   text-align: center;
   margin-top: 0;
   color: #845b5b;
+  font-size: 15px;
 }
 
 section, nav, aside {
@@ -26,6 +33,7 @@ section, nav, aside {
   display: inline-block;
   vertical-align: top;
 }
+
 
 section {
   width: 30%;
@@ -43,10 +51,12 @@ section {
 
 #family {
   width: 91%;
+  border-radius: 20px;
 }
 
 #shirt {
   width: 95%;
+  border-radius: 20px;
 }
 
 
@@ -78,9 +88,14 @@ tbody:nth-child(even) {
 }
 
 tr:hover {
-  background-color: #EEFFEE;
+  background-color: #CCeeEE;
 }
 
 th {
   text-size: 15px;
+}
+
+p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 5%;
 }

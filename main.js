@@ -38,13 +38,4 @@ function makeTable() {
   }
 }
 
-function addStore() {
-  var name = prompt("Location Name: ");
-  var minCustomer = prompt("Min Customers per Hour: ");
-  var maxCustomer = prompt("Max Customers per Hour: ");
-  var avgCookies = prompt("Average Cookies Bought Per Customer: ");
-  locations.push(new Store(name, minCustomer, maxCustomer, avgCookies));
-  makeTable();
-}
-
 makeTable();
