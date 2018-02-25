@@ -27,7 +27,7 @@ locations.push(new Store("Pearl District", 3, 24, 2.6));
 function makeTable() {
   var table = document.getElementById("store-container");
   for (indexStore = 0; indexStore < locations.length; indexStore++) {
-    table.innerHTML += "<tr><th>" + locations[indexStore].name + "</th></th>";
+    table.innerHTML += "<tr><th>" + locations[indexStore].name + "</th><th>Cookies</th></tr>";
     var totalCookies = 0
     for (indexHour = 0; indexHour < hoursOpen.length; indexHour++) {
       var cookiesPerHour = locations[indexStore].newAvgCookies();
