@@ -61,7 +61,7 @@ section {
 
 
 nav, aside {
-  width: 23%;
+  width: 20%;
   border: 2px solid white;
   border-radius: 20px;
   display: inline-block;
@@ -81,6 +81,7 @@ th, td {
 table {
   border: 1px solid black;
   margin:auto;
+  width: 70%;
 }
 
 tbody:nth-child(even) {
