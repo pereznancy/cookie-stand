@@ -36,7 +36,7 @@ section, nav, aside {
 
 
 section {
-  width: 30%;
+  width: 45%;
   padding: 2px;
   border: 7px solid white;
   border-radius: 20px;
@@ -61,7 +61,7 @@ section {
 
 
 nav, aside {
-  width: 30%;
+  width: 23%;
   border: 2px solid white;
   border-radius: 20px;
   display: inline-block;
