@@ -23,7 +23,7 @@ locations.push(new Store("Washington Square", 11, 38, 1.9));
 locations.push(new Store("Sellwood",20, 48, 3.3));
 locations.push(new Store("Pearl District", 3, 24, 2.6));
 
-
+//make table for constructor
 function makeTable() {
   var table = document.getElementById("store-container");
   for (indexStore = 0; indexStore < locations.length; indexStore++) {
