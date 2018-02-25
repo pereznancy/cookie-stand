@@ -99,3 +99,10 @@ p {
   font-family: "Comic Sans MS", cursive, sans-serif;
   margin: 5%;
 }
+
+input[type=text] {
+      width: 91%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+  }
