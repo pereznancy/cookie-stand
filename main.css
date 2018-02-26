@@ -81,6 +81,7 @@ th, td {
 table {
   border: 1px solid black;
   margin:auto;
+  border-radius: 10px;
 }
 
 tbody:nth-child(even) {
@@ -106,3 +107,9 @@ input[type=text] {
       margin: 8px 0;
       box-sizing: border-box;
   }
+
+fieldset {
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}

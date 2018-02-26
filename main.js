@@ -1,6 +1,6 @@
 'use strict';
 
-var hoursOpen = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm"] //hours for all stores
+var hoursOpen = ["10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"] //hours for all stores
 
 var table = document.getElementById("store-container");
 
@@ -49,6 +49,7 @@ function makeHeader(){
 
 // make table for constructor
 function makeTable() {
+  table.textContent= "";
   makeHeader();
   for (var indexStore = 0; indexStore < locations.length; indexStore++) {
     var location = locations[indexStore]
